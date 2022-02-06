@@ -18,6 +18,7 @@ import {
   Notification20,
   UserAvatar20,
 } from "@carbon/icons-react";
+import { Link } from "react-router-dom";
 
 const TutorialHeader = () => (
   <HeaderContainer
@@ -29,11 +30,13 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderName href="/" prefix="IBM">
-          Shopping Cart Demo
+        <HeaderName element={Link} to="/" prefix="IBM">
+          Carbon Tutorial
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/home">Contract Intelligence</HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -42,7 +45,9 @@ const TutorialHeader = () => (
         >
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/cartIems">Cart</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/repos">
+                Repositories
+              </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
