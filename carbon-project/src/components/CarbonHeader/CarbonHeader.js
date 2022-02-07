@@ -16,7 +16,7 @@ import {
 } from "@carbon/icons-react";
 import { Link } from "react-router-dom";
 
-const TutorialHeader = () => (
+const CarbonHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
       <Header aria-label="Carbon Tutorial">
@@ -50,4 +50,4 @@ const TutorialHeader = () => (
   />
 );
 
-export default TutorialHeader;
+export default CarbonHeader;
