@@ -15,7 +15,9 @@ import {
 } from "carbon-components-react";
 import {
   AppSwitcher20,
+  ShoppingCart32,
   Notification20,
+  ShoppingCatalog32,
   UserAvatar20,
 } from "@carbon/icons-react";
 import { Link } from "react-router-dom";
@@ -52,6 +54,12 @@ const TutorialHeader = () => (
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
+          <HeaderGlobalAction aria-label="Shoppping Catalog">
+            <ShoppingCatalog32 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="Shopping Cart">
+            <ShoppingCart32 />
+          </HeaderGlobalAction>
           <HeaderGlobalAction aria-label="Notifications">
             <Notification20 />
           </HeaderGlobalAction>

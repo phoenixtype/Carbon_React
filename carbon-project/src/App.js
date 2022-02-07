@@ -5,6 +5,7 @@ import TutorialHeader from "./components/TutorialHeader";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./content/LandingPage";
 import RepoPage from "./content/RepoPage";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/repos" component={RepoPage} />
+          <Route path="/cart" component={ShoppingCart} />
         </Switch>
       </Content>
     </div>
